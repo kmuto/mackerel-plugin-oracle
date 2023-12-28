@@ -19,10 +19,10 @@ if [ ! -f "instantclient_$ORACLEVERSION/sdk/include/oci8dp.h" ]; then
     exit 1
 fi
 
-PKG_CONFIG_PATH=/work
+PKG_CONFIG_PATH=`pwd`
 export PKG_CONFIG_PATH
 
-LD_LIBRARY_PATH=/work/instantclient_$ORACLEVERSION:/lib64
+LD_LIBRARY_PATH=`pwd`/instantclient_$ORACLEVERSION:/lib64
 export LD_LIBRARY_PATH
 
 rm -f mporacle
