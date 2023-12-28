@@ -8,4 +8,4 @@ services:
     volumes:
       - .:/work
     working_dir: /work
-    entrypoint: ./build.sh
+    command: ./build.sh
